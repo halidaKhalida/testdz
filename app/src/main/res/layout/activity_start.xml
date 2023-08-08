@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="#2E4C56"
                     android:layout_marginBottom="10dp"
-                    android:text="hdfhdfhfd hgfdh ghfff rtyhrtyryrr\n        fddfhftfd thftryhrtfyhtrr "
+                    android:text="hdfhdfhfd hgfdh asdfasdasdasdasdasdas rtyhrtyryrr\n        fddfhftfd thftryhrtfyhtrr "
                     android:textSize="17sp"
                     android:textStyle="normal"/>
             </LinearLayout>
