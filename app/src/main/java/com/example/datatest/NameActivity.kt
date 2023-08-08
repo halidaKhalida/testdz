@@ -14,19 +14,25 @@ class NameActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
-        val etName = findViewById<EditText>(R.id.et_name)
-        val bPlay = findViewById<Button>(R.id.b_play)
-
-        bPlay.setOnClickListener {
-            if (etName.text.toString().length >= 3) {
-                val intent = Intent(this, TestActivity::class.java)
-                intent.putExtra("Qummi", etName.text.toString())
-                startActivity(intent)
-            } else {
-                Toast.makeText(this, "Avval ism kiritishingiz kerak", Toast.LENGTH_SHORT).show()
-            }
+        val bStrelka = findViewById<Button>(R.id.b_strelka)
+        bStrelka.setOnClickListener {
+            val intent = Intent(this, TestActivity::class.java)
+            startActivity(intent)
 
         }
+//        val etName = findViewById<EditText>(R.id.et_name)
+//        val bPlay = findViewById<Button>(R.id.b_play)
+//
+//        bPlay.setOnClickListener {
+//            if (etName.text.toString().length >= 3) {
+//                val intent = Intent(this, TestActivity::class.java)
+//                intent.putExtra("Qummi", etName.text.toString())
+//                startActivity(intent)
+//            } else {
+//                Toast.makeText(this, "Avval ism kiritishingiz kerak", Toast.LENGTH_SHORT).show()
+//            }
+
+//        }
 
     }
 }

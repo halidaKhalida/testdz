@@ -12,7 +12,7 @@ class StartActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
-        val bGetStart = findViewById<Button>(R.id.b_getStart)
+        val bGetStart = findViewById<Button>(R.id.b_start)
         bGetStart.setOnClickListener {
             val intent = Intent(this, NameActivity::class.java)
             startActivity(intent)

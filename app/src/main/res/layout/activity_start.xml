@@ -3,64 +3,119 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@drawable/background_main">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:layout_weight="1">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_1"/>
-
-    </LinearLayout>
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical"
-        android:layout_weight="1.3">
-
-        <TextView
+        android:layout_weight="1.4">
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Welcome to the Test!"
-            android:textColor="#0096A8"
-            android:textSize="38sp"
-            android:textStyle="bold" />
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/telegraogo"/>
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal|bottom"
         android:orientation="vertical"
-        android:layout_weight="1.2">
+        android:background="@drawable/thirdpage_layout"
+        android:layout_weight="1">
 
-        <Button
-            android:id="@+id/b_getStart"
-            android:layout_marginBottom="50dp"
-            android:layout_width="210dp"
-            android:layout_height="50dp"
-            android:background="@drawable/get_start"
-            android:textColor="@color/white"
-            android:textSize="22sp"
-            app:backgroundTint="@null"
-            android:text="Начать"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/thirdpage_layout"
+            android:gravity="center|top"
+            android:layout_weight="1.7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2E4C56"
+                android:text="Telegram"
+                android:textSize="30sp"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2E4C56"
+                    android:layout_marginBottom="10dp"
+                    android:text="hdfhdfhfd hgfdh ghfff rtyhrtyryrr\n        fddfhftfd thftryhrtfyhtrr "
+                    android:textSize="17sp"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/iv_circle1"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/baseline_circle_24"/>
+                <ImageView
+                    android:id="@+id/iv_circle2"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/baseline_circle2"/>
+                <ImageView
+                    android:id="@+id/iv_circle3"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/baseline_circle2"/>
+                <ImageView
+                    android:id="@+id/iv_circle4"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/baseline_circle2"/>
+                <ImageView
+                    android:id="@+id/iv_circle5"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/baseline_circle2"/>
+                <ImageView
+                    android:id="@+id/iv_circle6"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/baseline_circle2"/>
+            </LinearLayout>
+        </LinearLayout>
 
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white">
+            <Button
+                android:id="@+id/b_start"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:background="@drawable/getstart_button"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                app:backgroundTint="@null"
+                android:text="Start Message"/>
+        </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>

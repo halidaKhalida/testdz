@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_gradient"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,10 +22,11 @@
         android:layout_weight="1">
 
         <ImageView
+            android:id="@+id/iv_icon"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/img"/>
+            android:src="@drawable/telegramic"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
             android:textColor="#03C9FE"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:text="Тест по арабскому языку"/>
+            android:text=""/>
     </LinearLayout>
 
     <LinearLayout

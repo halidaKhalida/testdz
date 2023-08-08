@@ -3,108 +3,103 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_gradient"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:layout_weight="1.4">
-        <ImageView
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/tv_text1"
             android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:src="@drawable/translatetwo"/>
+            android:layout_height="wrap_content"
+            android:textColor="#2E4C56"
+            android:text="Your phone number"
+            android:layout_marginTop="100dp"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2E4C56"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="hdfhdfhfd hgfdh ghfff rtyhrtyryrr\n        fddfhftfd thftryhrtfyhtrr "
+            android:textSize="17sp"
+            android:textStyle="normal"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/thirdpage_layout"
+        android:gravity="center"
         android:layout_weight="1">
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/thirdpage_layout"
-            android:gravity="center"
-            android:layout_weight="1.2">
+            android:layout_width="360dp"
+            android:layout_height="350dp"
+            android:background="@drawable/get_start"
+            android:layout_weight="5">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flaguzb"/>
             <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="Uzb"
+                android:gravity="center|left"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#2E4C56"
-                android:text="Регистрация"
-                android:textSize="36sp"
-                android:textStyle="normal"/>
-        </LinearLayout>
-        <LinearLayout
-            android:paddingHorizontal="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            android:orientation="vertical"
-            android:layout_weight="1.1">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#2E4C56"
-                android:text="Let's Play    "
-                android:textSize="24sp"
-                android:textStyle="normal"/>
+                android:layout_gravity="center|"
+                android:layout_marginLeft="170dp"
+                android:src="@drawable/baseline_arrow_forward_ios_24"/>
 
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#93A2A6"
-                android:text="So,there are some questions to answer.When you give your answer to the question,it will be accepted to base and at the end,results will provided."
-                android:textSize="16sp"
-                android:textStyle="normal"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
-            android:paddingHorizontal="25dp"
             android:orientation="vertical"
             android:layout_weight="1">
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#2E4C56"
-                android:text="Имя"
-                android:textSize="18sp"
-                android:textStyle="normal"/>
-            <EditText
-                android:id="@+id/et_name"
-                android:layout_marginTop="10dp"
-                android:paddingStart="10dp"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/name_edittext_back"
-                android:textColor="#2E4C56"
-                android:textSize="18sp"
-                android:hint="Введите свое имя"/>
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="4">
+                <EditText
+                    android:layout_width="360dp"
+                    android:layout_height="60dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="phone"
+                    android:background="@drawable/get_start"
+                    android:text="+998"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
+                <Button
+                    android:id="@+id/b_strelka"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="67dp"
+                    android:text="->"
+                    android:textSize="25sp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/lineeeie"
+                    app:backgroundTint="@null"/>
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/white">
-            <Button
-                android:id="@+id/b_play"
-                android:layout_width="210dp"
-                android:layout_height="50dp"
-                android:background="@drawable/getstart_button"
-                android:textColor="@color/white"
-                android:textSize="22sp"
-                app:backgroundTint="@null"
-                android:text="Начать тест"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
